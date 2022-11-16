@@ -1,7 +1,7 @@
 
 import React from 'react'
 // @mui
-import { Container, Typography } from '@mui/material';
+import { Typography } from '@mui/material';
 import { makeStyles } from '@material-ui/core/styles';
 import Accordion from '@material-ui/core/Accordion';
 import AccordionSummary from '@material-ui/core/AccordionSummary';
@@ -11,6 +11,7 @@ import Grid from '@material-ui/core/Grid';
 import Box from '@material-ui/core/Box';
 import { Button } from '@material-ui/core';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
+
 
 
 
@@ -37,7 +38,9 @@ const useStyles = makeStyles((theme) => ({
     },
 
     accordion: {
-        backgroundColor:"#cfcfcf"
+        backgroundColor:"#d9d9d9",
+        border :"none"
+
     },
     title1: {
         [theme.breakpoints.up('md')]: {
@@ -47,6 +50,9 @@ const useStyles = makeStyles((theme) => ({
         [theme.breakpoints.down('sm')]: {
             display: "none"
         },
+        marginTop:"12px",
+        fontWeight: "bold"
+
     },
 
 
@@ -73,35 +79,25 @@ function WeeklyPage() {
 
     return (
         <div className={classes.root}>
-           
-
-            <Container maxWidth="xl">
-                
-               
-                <Grid container spacing={3}>
-                
-                    <Grid item xs={12} md={8} lg={9}>
-                      
-                            <Typography className={classes.title1} variant="h6" sx={{ mb: 5 }}>
+            <div style={{ width: '100%' }}>
+                    <Box display="flex"  p={1} >
+                        <Box p={1} flexGrow={1} >
+                           <Typography className={classes.title1} variant="h6" sx={{ mb: 5 }}>
                                <ArrowBackIosIcon />   Weekly Plan
                             </Typography>
+                        </Box>
+                        
+                        <Box p={1} >
+                            <div className="button">
+                                <Button variant="contained" >Send To Runners</Button>
+                            </div>
+                        </Box>
 
 
-                             <Typography className={classes.title2} variant="h6" sx={{ mb: 5 }}>
-                                 Runners Plan
-                            </Typography>
-                       
-                    </Grid>
-                   
-                    <Grid item xs={12} md={4} lg={3}>
-                     <div className="button">
-                         <Button variant="contained" >Send To Runners</Button>
-                     </div>
 
-                       
-                    </Grid>
-                  
-                </Grid>
+                    </Box>
+            </div>
+
                 <br />
                 
               
@@ -159,7 +155,7 @@ function WeeklyPage() {
 
                                 
                                 
-                                <div className='table'>
+                                <div className='table' style={{width:"100%"}}>
                                     <WeeklyPlan />
                                 </div>
                                 
@@ -334,14 +330,12 @@ function WeeklyPage() {
                 </div>
                 <br />
                 <div className='send'>
-                    <Grid item xs={12}>
+
 
                         <Button fullWidth="true" variant="contained" >Send To Runners</Button>
 
-                </Grid>
                 </div>
                 
-            </Container>
         </div>
     );
 }

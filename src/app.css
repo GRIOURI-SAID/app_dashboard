@@ -1,11 +1,24 @@
 td.MuiTableCell-root.MuiTableCell-body.MuiTableCell-alignCenter.MuiTableCell-sizeSmall {
     border: none;
-    background-color: #cdcccc;
+    background-color: #d9d9d9;
 }
 
 td:first-child {
   padding-left:20px;
   padding-right:0;
+}
+
+
+
+.table {
+    width: 100% !important;
+}
+
+
+.MuiAccordionDetails-root {
+    display: flex;
+    padding: 8px 16px 16px;
+    background: #efefef;
 }
 
 th.MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeSmall {
@@ -50,6 +63,18 @@ button.MuiButtonBase-root.MuiButton-root.MuiButton-contained {
     margin-left: 10px;
 }
 
+.makeStyles-span-81 {
+    padding: 5px 7px;
+    margin-left: 4px;
+    background-color: #cfcfcf;
+    border-radius: 4px;
+}
+
+
+th.MuiTableCell-root.MuiTableCell-body.MuiTableCell-sizeSmall {
+    border: none;
+    font-weight: bold;
+}
 
 
 
@@ -214,12 +239,15 @@ input {
     display: none !important;
   }
 
+
   .table {
       display: none;
   }
 
   .send{
     display: block;
+      margin-left: -14px;
+
 }
 
   .button {
@@ -230,24 +258,37 @@ input {
     display: block;
    }
 
-   .makeStyles-accordion-19 {
-    background-color: #fff;
-    border: 1px solid;
-}
+    .makeStyles-accordion-21 {
+        border: none;
+        background-color: #d9d9d9;
+        border: 1px solid !important;
+        /* border: 4px; */
+        border-radius: 4px !important;
+        box-shadow: none !important;
+    }
 
 
    table.MuiTable-root.makeStyles-table-24 {
     display: none;
 }
-
+    span.MuiButton-label {
+        color: black;
+    }
 
 
 
 
 div#panel1a-header {
     background-color: #fff;
-    border: 1px solid;
+
+     border-radius: 6px !important;
 }
+
+
+    .css-epd502 {
+        overflow-x: hidden;
+        width: 320px;
+        max-height: 170px !important;}
 
 
 
@@ -284,6 +325,11 @@ div#panel1a-header {
 div#panel2a-header {
     background: #ffff !important;
 }
+
+    .makeStyles-title1-17 {
+        display: block;
+        color: black;
+    }
 
 
 

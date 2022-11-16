@@ -27,7 +27,7 @@ export default function Router() {
     
     {
       path: '*',
-      element: <Navigate to="/404" replace />,
+      element: <Page404  />,
     },
   ]);
 

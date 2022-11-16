@@ -94,7 +94,7 @@ function CardPlan() {
                                 <ListItem >
                                     <div style={{ width: '100%' }}>
                                         <Box display="flex" className="MuiBox">
-                                            <Box width="100%" >
+                                            <Box  width="95%" >
 
                                                 <p className='type'>Duration Type</p>
                                                 <p className='distance'>Distance</p>
